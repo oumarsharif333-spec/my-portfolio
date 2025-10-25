@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oumar - Future Developer</title>
+   <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+    }
+    
+    /* Fixed Navigation */
+    .navbar {
+        background: #2c3e50;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+    
+    .nav-links a:hover {
+        background: #3498db;
+        transform: translateY(-2px);
+    }
+    
+    /* Improved Sections */
+    .section {
+        margin: 2rem 0;
+        padding: 2rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .section h2 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 0.5rem;
+    }
+    
+    /* Projects Grid */
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .project-card {
+        background: #ecf0f1;
+        padding: 1.5rem;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .project-card h3 {
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Skills List */
+    .skills-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .skills-list li {
+        background: #3498db;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .contact-form{
+        max-width: 600px;
+        margin: 2rem auto;
+    }
+
+    .form-group{
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .form-group input
+    .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 2px solid #bdc3c7;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+    }
+
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #3498db;
+
+    }
+
+    .submit-btn {
+        background: #2ecc71;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: backgoround 0.3s ease;
+        width: 100%;
+    }
+
+    .contact-info{
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 2px solid #ecf0f1;
+    }
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .projects {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .header {
+        padding: 2rem 1rem;
+    }
+    
+    .section {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .contact-form {
+        margin: 1rem auto;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+</style>
+</head>
+<body>
+ 
+<nav class="nav bar">
+    <ul class="nav-links">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+</nav>
+
+<div id="home" class="header">
+    <h1>oumar</h1>
+    <p>future web developer</p>
+</div>
+ <div id="about" class="section">
+    <h2>About me</h2>
+    <p>I'm learning web development to build beatiful and functional websites</p>
+ </div>
+
+ <div id="projects" class="section">
+    <h2>my projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>project 1</h3>
+            <p>My first website - built with html & css</p>
+
+        </div>
+        <div class="project-card">
+            <h3>project2</h3>
+            <p>coming soon... learning java script</p>
+        </div>
+
+    </div>
+
+ </div>
+ <div id="skills" class="section">
+    <h2>skills I'm learning</h2>
+    <ul class="skills-list">
+        <li>Html5</li>
+        <li>css3</li>
+        <li>java script</li>
+        <li>Responsive design</li>
+    </ul>
+
+ </div>
+<div id="contact" class="section">
+    <h2>Contact me</h2>
+    <p>Ready to start your project? send me a message!</p>
+<form class="contact-form">
+    <div class="form-group">
+        <label for="name">your name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">your message:</label>
+        <textarea  id="message" name="message" rows="5" required ></textarea>
+    </div>
+    <button type="submit" class="submit-btn">send message</button>
+
+</form>
+<div class="contact-info">
+    <p>or reach me directly at: <strong>oumarsharif333@gmail.com</strong></p>
+</div>
+
+</div>
+<script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
+</script>
+</body>
+</html>
